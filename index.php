@@ -2,7 +2,7 @@
 <html lang="en">
 
 <meta charset="utf-8">
-<title>fsociety</title>
+<title>Lord of the Rings</title>
 <link rel="stylesheet" href="">
 <link rel="icon" href="" type="image/gif" sizes="16x16">
 <body>
