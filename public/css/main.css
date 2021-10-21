@@ -1,6 +1,90 @@
-body {
-  padding: 0;
+/* grenze-gotisch-100normal - latin */
+@font-face {
+  font-family: "Grenze Gotisch";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100;
+  src: local("Grenze Gotisch Thin "), local("Grenze Gotisch-Thin"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-100.woff2?c8d5efc44d24be747001901e80c6c6e5) format("woff2"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-100.woff?c58a188e04a60408ff1cf090ececc1bb) format("woff");
+  /* Modern Browsers */
 }
-body p {
-  color: white;
+/* grenze-gotisch-200normal - latin */
+@font-face {
+  font-family: "Grenze Gotisch";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src: local("Grenze Gotisch Extra Light "), local("Grenze Gotisch-Extra Light"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-200.woff2?c2360be9899b15be6e3929bf3194fe44) format("woff2"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-200.woff?7578fc7b0b45622ebc57893b082de2aa) format("woff");
+  /* Modern Browsers */
+}
+/* grenze-gotisch-300normal - latin */
+@font-face {
+  font-family: "Grenze Gotisch";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: local("Grenze Gotisch Light "), local("Grenze Gotisch-Light"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-300.woff2?f9357ab1d7ccc6c2420bd296f59b44fa) format("woff2"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-300.woff?a89e4e70a87539906e8d9e1490d69c08) format("woff");
+  /* Modern Browsers */
+}
+/* grenze-gotisch-400normal - latin */
+@font-face {
+  font-family: "Grenze Gotisch";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Grenze Gotisch Regular "), local("Grenze Gotisch-Regular"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-400.woff2?816105406c5415944f7fb81b287b1490) format("woff2"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-400.woff?cbe21741568cc89d61caeb7f55324cba) format("woff");
+  /* Modern Browsers */
+}
+/* grenze-gotisch-500normal - latin */
+@font-face {
+  font-family: "Grenze Gotisch";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: local("Grenze Gotisch Medium "), local("Grenze Gotisch-Medium"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-500.woff2?e3c317e72f5182c6ff4216e572a6384f) format("woff2"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-500.woff?d863ca9e3a225284eca2b1fd64883882) format("woff");
+  /* Modern Browsers */
+}
+/* grenze-gotisch-600normal - latin */
+@font-face {
+  font-family: "Grenze Gotisch";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: local("Grenze Gotisch SemiBold "), local("Grenze Gotisch-SemiBold"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-600.woff2?bb6515b16b2df8edadb4753d8f68ad8b) format("woff2"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-600.woff?b2927408078805c589a3464a4ac4d714) format("woff");
+  /* Modern Browsers */
+}
+/* grenze-gotisch-700normal - latin */
+@font-face {
+  font-family: "Grenze Gotisch";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local("Grenze Gotisch Bold "), local("Grenze Gotisch-Bold"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-700.woff2?9fbb003cd732995f0d884ed2da2375c5) format("woff2"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-700.woff?43e28de6f16a2bcb05b6cc3482164045) format("woff");
+  /* Modern Browsers */
+}
+/* grenze-gotisch-800normal - latin */
+@font-face {
+  font-family: "Grenze Gotisch";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: local("Grenze Gotisch ExtraBold "), local("Grenze Gotisch-ExtraBold"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-800.woff2?d167da474c5577aa57f8ee670e5fa635) format("woff2"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-800.woff?4720890fb98df95355617a1d0a3d5918) format("woff");
+  /* Modern Browsers */
+}
+/* grenze-gotisch-900normal - latin */
+@font-face {
+  font-family: "Grenze Gotisch";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src: local("Grenze Gotisch Black "), local("Grenze Gotisch-Black"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-900.woff2?8057513016b7b3b2711f6a546e20e616) format("woff2"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-900.woff?dfdc05911b2674048c69942f67c9d9b6) format("woff");
+  /* Modern Browsers */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.slider h1 {
+  font-family: "Grenze Gotisch", cursive;
 }

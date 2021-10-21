@@ -18,5 +18,7 @@
     "sass": "^1.43.2",
     "sass-loader": "^12.2.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "typeface-grenze-gotisch": "^1.1.13"
+  }
 }

@@ -1,7 +1,13 @@
-body {
+@import "~typeface-grenze-gotisch";
+
+* {
   padding: 0;
-  
-  p {
-    color: white;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  h1 {
+    font-family: "Grenze Gotisch", cursive;
   }
 }
