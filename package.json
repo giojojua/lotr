@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "deploy": "surge --project ./public --domain lordoftherings.surge.sh",
+    "deploy": "surge --project ./public --token 0882c8aff0699e84d693bd77d2e5c464",
     "dev": "mix",
     "watch": "mix watch"
   },
