@@ -1,0 +1,22 @@
+{
+  "name": "fsociety",
+  "version": "1.0.0",
+  "description": "fuck society",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "mix",
+    "watch": "mix watch"
+  },
+  "author": "th3g3ntl3men",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.34",
+    "node-sass": "^6.0.1",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.43.2",
+    "sass-loader": "^12.2.0"
+  },
+  "dependencies": {}
+}
