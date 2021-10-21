@@ -4,11 +4,6 @@
   "description": "Lord of the Rings Brotherhood Website",
   "main": "index.js",
   "private": true,
-  "git": {
-    "scripts": {
-      "pre-push": "npm run deploy"
-    }
-  },
   "scripts": {
     "deploy": "surge --project ./public --domain lordoftherings.surge.sh",
     "dev": "mix",
