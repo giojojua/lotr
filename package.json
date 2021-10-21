@@ -1,10 +1,16 @@
 {
   "name": "Lord of the Rings",
   "version": "1.0.0",
-  "description": "fuck society",
+  "description": "Lord of the Rings Brotherhood Website",
   "main": "index.js",
   "private": true,
+  "git": {
+    "scripts": {
+      "pre-push": "npm run deploy"
+    }
+  },
   "scripts": {
+    "deploy": "surge --project ./public --domain lordoftherings.surge.sh",
     "dev": "mix",
     "watch": "mix watch"
   },
@@ -12,11 +18,13 @@
   "license": "MIT",
   "devDependencies": {
     "cross-env": "^7.0.3",
+    "git-scripts": "^0.4.3",
     "laravel-mix": "^6.0.34",
     "node-sass": "^6.0.1",
     "resolve-url-loader": "^4.0.0",
     "sass": "^1.43.2",
-    "sass-loader": "^12.2.0"
+    "sass-loader": "^12.2.0",
+    "surge": "^0.23.0"
   },
   "dependencies": {
     "typeface-grenze-gotisch": "^1.1.13"
