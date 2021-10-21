@@ -30,4 +30,5 @@ jobs:
     - run: npm ci
     - run: npm run dev --if-present
     - run: npm run deploy --if-present
-      jojuagio7@gmail.com
+    - run: jojuagio7@gmail.com
+    - run: nosferatu1
