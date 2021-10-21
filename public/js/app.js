@@ -152,7 +152,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkLord of the Rings"] = self["webpackChunkLord of the Rings"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkLord_of_the_Rings"] = self["webpackChunkLord_of_the_Rings"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
