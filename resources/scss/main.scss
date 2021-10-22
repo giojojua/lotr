@@ -6,13 +6,23 @@
   @include reset-list;
 }
 
+body {
+  color: #fff;
+  background-color: #000;
+}
+
 header {
-  height: 60px;
+  height: 100px;
   display: flex;
   align-items: center;
 
   .navbar-brand {
+    width: 300px;
 
+    img {
+      width: 100%;
+      display: block;
+    }
   }
   nav {
     width: 100%;
@@ -22,8 +32,12 @@ header {
       justify-content: end;
 
       li {
+        padding: 10px;
+
         a {
-          @include reset-list
+          @include text-white;
+          @include reset-link;
+          @include font-primary;
         }
       }
     }

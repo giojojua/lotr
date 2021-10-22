@@ -84,6 +84,10 @@
   margin: auto;
 }
 
+.active {
+  color: #fdbf01;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -91,10 +95,22 @@
   box-sizing: border-box;
 }
 
+body {
+  color: #fff;
+  background-color: #000;
+}
+
 header {
-  height: 60px;
+  height: 100px;
   display: flex;
   align-items: center;
+}
+header .navbar-brand {
+  width: 300px;
+}
+header .navbar-brand img {
+  width: 100%;
+  display: block;
 }
 header nav {
   width: 100%;
@@ -104,11 +120,14 @@ header nav ul {
   display: flex;
   justify-content: end;
 }
+header nav ul li {
+  padding: 10px;
+}
 header nav ul li a {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Grenze Gotisch", cursive;
+  font-size: 25px;
 }
 
 .slider h1 {
