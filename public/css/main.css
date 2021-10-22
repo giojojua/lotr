@@ -79,9 +79,35 @@
   src: local("Grenze Gotisch Black "), local("Grenze Gotisch-Black"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-900.woff2?8057513016b7b3b2711f6a546e20e616) format("woff2"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-900.woff?dfdc05911b2674048c69942f67c9d9b6) format("woff");
   /* Modern Browsers */
 }
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+header nav {
+  width: 100%;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+}
+header nav ul li a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   box-sizing: border-box;
 }
 
