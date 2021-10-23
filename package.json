@@ -19,9 +19,8 @@
     "resolve-url-loader": "^4.0.0",
     "sass": "^1.43.2",
     "sass-loader": "^12.2.0",
-    "surge": "^0.23.0"
-  },
-  "dependencies": {
+    "surge": "^0.23.0",
+    "bootstrap": "^5.1.3",
     "typeface-grenze-gotisch": "^1.1.13"
   }
 }

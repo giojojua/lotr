@@ -1,1 +1,1 @@
-import './slider'
+import 'bootstrap/js/dist/carousel'
