@@ -79,15 +79,6 @@
   src: local("Grenze Gotisch Black "), local("Grenze Gotisch-Black"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-900.woff2?8057513016b7b3b2711f6a546e20e616) format("woff2"), url(/fonts/vendor/typeface-grenze-gotisch/files/grenze-gotisch-latin-900.woff?dfdc05911b2674048c69942f67c9d9b6) format("woff");
   /* Modern Browsers */
 }
-.container {
-  width: 1140px;
-  margin: auto;
-}
-
-.active {
-  color: #fdbf01;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -100,6 +91,40 @@ body {
   background-color: #000;
 }
 
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.active {
+  color: #fdbf01;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 header {
   height: 100px;
   display: flex;
@@ -130,6 +155,31 @@ header nav ul li a {
   font-size: 25px;
 }
 
-.slider h1 {
-  font-family: "Grenze Gotisch", cursive;
+.slider {
+  position: relative;
+}
+.slider .slideshow-container {
+  position: relative;
+  margin: auto;
+}
+.slider .slideshow-container img {
+  width: 100%;
+}
+.slider .prev, .slider .next {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.slider .prev button, .slider .next button {
+  height: 100%;
+  width: 150px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.slider .prev {
+  left: 0;
+}
+.slider .next {
+  right: 0;
 }

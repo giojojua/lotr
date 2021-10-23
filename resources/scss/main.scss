@@ -1,15 +1,9 @@
 @import "~typeface-grenze-gotisch";
 @import "variables";
 @import "default";
+@import "animation";
 
-* {
-  @include reset-list;
-}
-
-body {
-  color: #fff;
-  background-color: #000;
-}
+//NAVBAR
 
 header {
   height: 100px;
@@ -24,8 +18,10 @@ header {
       display: block;
     }
   }
+
   nav {
     width: 100%;
+
     ul {
       list-style: none;
       display: flex;
@@ -44,8 +40,38 @@ header {
   }
 }
 
+//SLIDER
 .slider {
-  h1 {
-    font-family: "Grenze Gotisch", cursive;
+  position: relative;
+
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 0;
+    height: 100%;
+
+    button {
+      height: 100%;
+      width: 150px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
   }
 }

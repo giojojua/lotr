@@ -2,5 +2,10 @@
     "/js/app.js": "/js/app.js",
     "/css/main.css": "/css/main.css",
     "/index.html": "/index.html",
-    "/img/lotr-logo.png": "/img/lotr-logo.png"
+    "/img/chevron-left-solid.svg": "/img/chevron-left-solid.svg",
+    "/img/chevron-right-solid.svg": "/img/chevron-right-solid.svg",
+    "/img/lotr-logo.png": "/img/lotr-logo.png",
+    "/img/lotr-slider1.jpg": "/img/lotr-slider1.jpg",
+    "/img/lotr-slider2.jpg": "/img/lotr-slider2.jpg",
+    "/img/lotr-slider3.jpg": "/img/lotr-slider3.jpg"
 }

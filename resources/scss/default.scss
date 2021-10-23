@@ -1,6 +1,17 @@
+* {
+  @include reset-list;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+}
+
 .container {
-  width: 1140px;
+  width: 100%;
+  max-width: 1140px;
   margin: auto;
+  padding: 0 15px;
 }
 
 .active {
