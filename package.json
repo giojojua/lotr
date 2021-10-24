@@ -9,7 +9,7 @@
     "dev": "mix",
     "watch": "mix watch"
   },
-  "author": "th3g3ntl3men",
+  "author": "th3g3ntl3man",
   "license": "MIT",
   "devDependencies": {
     "bootstrap": "^5.1.3",

@@ -333,7 +333,7 @@ body {
   width: 100%;
   max-width: 1140px;
   margin: auto;
-  padding: 0 15px;
+  padding: 0 30px;
 }
 
 .active {
@@ -405,6 +405,9 @@ header {
   height: 100px;
   display: flex;
   align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 header .navbar-brand {
   width: 300px;
