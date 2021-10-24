@@ -15,7 +15,7 @@ body {
   width: 100%;
   max-width: 1140px;
   margin: auto;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 
 .active {
@@ -58,4 +58,10 @@ h3 {
 
 p {
   @include font-secondary;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 22px;
+  }
 }
