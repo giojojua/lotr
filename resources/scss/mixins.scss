@@ -14,9 +14,17 @@
 }
 
 @mixin text-yellow {
-  color: #fdbf01;
+  color: #f9bc01;
+}
+
+@mixin text-justify {
+  text-align: justify;
 }
 
 @mixin font-primary {
   font-family: "Grenze Gotisch", cursive;
+}
+
+@mixin font-secondary {
+  font-family: "Poppins", sans-serif;
 }

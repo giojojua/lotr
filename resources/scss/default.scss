@@ -2,9 +2,13 @@
   @include reset-list;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #fff;
-  background-color: #1c1e24;
+  background-color: #0e0f12;
 }
 
 .container {
@@ -16,4 +20,42 @@ body {
 
 .active {
   @include text-yellow;
+}
+
+.text-justify {
+  @include text-justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-yellow {
+  @include text-yellow;
+}
+
+h1, h2, h3 {
+  @include font-primary;
+}
+
+h1 {
+  @include text-yellow;
+  font-size: 60px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  @include text-yellow;
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  @include text-yellow;
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+p {
+  @include font-secondary;
 }

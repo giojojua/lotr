@@ -12,6 +12,7 @@
   "author": "th3g3ntl3men",
   "license": "MIT",
   "devDependencies": {
+    "bootstrap": "^5.1.3",
     "cross-env": "^7.0.3",
     "git-scripts": "^0.4.3",
     "laravel-mix": "^6.0.34",
@@ -20,7 +21,7 @@
     "sass": "^1.43.2",
     "sass-loader": "^12.2.0",
     "surge": "^0.23.0",
-    "bootstrap": "^5.1.3",
-    "typeface-grenze-gotisch": "^1.1.13"
+    "typeface-grenze-gotisch": "^1.1.13",
+    "@fontsource/poppins": "^4.5.0"
   }
 }
