@@ -35,9 +35,12 @@ closemenu.onclick = function () {
 }
 
 function scrollNavbarMobile() {
-    burgermenu.style.display = "none";
-    closemenu.style.display = "none";
-    document.body.style.overflow = "auto";
+    let mobileResolution = window.matchMedia("(max-width: 767px)")
+    if (mobileResolution.matches) { // If media query matches
+        burgermenu.style.display = "none";
+        closemenu.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
 }
 
 for(let i=0; i<burgermenupage.length; i++) {
