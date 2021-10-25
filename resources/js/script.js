@@ -19,7 +19,8 @@ mybutton.onclick = function () {
 
 let burgerbar = document.getElementById("burgerBar");
 let closemenu = document.getElementById("closeMenu");
-let burgermenu = document.getElementById("burgerMenu")
+let burgermenu = document.getElementById("burgerMenu");
+let burgermenupage = burgermenu.getElementsByTagName("a");
 
 burgerbar.onclick = function () {
     burgermenu.style.display = "flex";
@@ -31,4 +32,14 @@ closemenu.onclick = function () {
     burgermenu.style.display = "none";
     closemenu.style.display = "none";
     document.body.style.overflow = "auto";
+}
+
+function scrollNavbarMobile() {
+    burgermenu.style.display = "none";
+    closemenu.style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+for(let i=0; i<burgermenupage.length; i++) {
+    burgermenupage[i].addEventListener("click", scrollNavbarMobile, true);
 }

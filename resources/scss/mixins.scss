@@ -17,6 +17,14 @@
   color: #f9bc01;
 }
 
+@mixin text-dark {
+  color: #0e0f12;
+}
+
+@mixin bg-yellow {
+  background-color: #f9bc01;
+}
+
 @mixin text-justify {
   text-align: justify;
 }

@@ -46,6 +46,7 @@ mybutton.onclick = function () {
 var burgerbar = document.getElementById("burgerBar");
 var closemenu = document.getElementById("closeMenu");
 var burgermenu = document.getElementById("burgerMenu");
+var burgermenupage = burgermenu.getElementsByTagName("a");
 
 burgerbar.onclick = function () {
   burgermenu.style.display = "flex";
@@ -58,6 +59,16 @@ closemenu.onclick = function () {
   closemenu.style.display = "none";
   document.body.style.overflow = "auto";
 };
+
+function scrollNavbarMobile() {
+  burgermenu.style.display = "none";
+  closemenu.style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
+for (var i = 0; i < burgermenupage.length; i++) {
+  burgermenupage[i].addEventListener("click", scrollNavbarMobile, true);
+}
 
 /***/ }),
 

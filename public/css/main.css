@@ -313,6 +313,50 @@
   color: #000;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -462,6 +506,35 @@ header nav #burgerBar, header nav #closeMenu {
   background-color: #00000066;
 }
 
+#services {
+  padding: 60px 0;
+}
+#services .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px 30px;
+}
+#services .services .service-box {
+  height: 250px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f9bc01;
+  border-radius: 3px;
+  background: linear-gradient(to right, #765901, #f9bc01, #f9bc01, #765901);
+}
+#services .services .service-box h3 {
+  text-align: center;
+  color: #0e0f12;
+}
+#services .services .service-box:hover {
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+}
+
 #team {
   padding: 60px 0;
 }
@@ -604,22 +677,6 @@ footer p {
     -webkit-animation: fadeIn 1s;
     -moz-animation: fadeIn 1s;
     -o-animation: fadeIn 1s;
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
   header nav .button-group {
     position: relative;

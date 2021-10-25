@@ -6,6 +6,7 @@
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/carousel";
 @import "mixins";
+@import "animation";
 @import "default";
 
 //NAVBAR
@@ -103,6 +104,37 @@ header {
 }
 
 //SERVICES
+#services {
+  padding: 60px 0;
+
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px 30px;
+
+    .service-box {
+      height: 250px;
+      width: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #f9bc01;
+      border-radius: 3px;
+      background: linear-gradient(to right, #765901, #f9bc01, #f9bc01, #765901);
+
+      h3 {
+        text-align: center;
+        @include text-dark;
+      }
+
+      &:hover {
+        animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+}
 
 //TEAM
 #team {
@@ -283,31 +315,6 @@ footer {
         -o-animation: fadeIn 1s;
       }
 
-      @keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-      }
-
-      @-moz-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-      }
-
-      @-webkit-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-      }
-
-      @-o-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-      }
-
-      @-ms-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-      }
-      
       .button-group {
         position: relative;
       }
