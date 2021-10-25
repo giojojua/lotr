@@ -1,6 +1,8 @@
 let mybutton = document.getElementById("btnUp");
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+    scrollFunction()
+};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -10,7 +12,23 @@ function scrollFunction() {
     }
 }
 
-mybutton.onclick = function (topFunction) {
+mybutton.onclick = function () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+let burgerbar = document.getElementById("burgerBar");
+let closemenu = document.getElementById("closeMenu");
+let burgermenu = document.getElementById("burgerMenu")
+
+burgerbar.onclick = function () {
+    burgermenu.style.display = "flex";
+    closemenu.style.display = "block";
+    document.body.style.overflow = "hidden"
+}
+
+closemenu.onclick = function () {
+    burgermenu.style.display = "none";
+    closemenu.style.display = "none";
+    document.body.style.overflow = "auto";
 }

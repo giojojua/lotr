@@ -3,6 +3,7 @@
     "/css/main.css": "/css/main.css",
     "/index.html": "/index.html",
     "/images/aragorn.jpg": "/images/aragorn.jpg",
+    "/images/bars-solid.svg": "/images/bars-solid.svg",
     "/images/boromir.jpg": "/images/boromir.jpg",
     "/images/chevron-left-solid.svg": "/images/chevron-left-solid.svg",
     "/images/chevron-right-solid.svg": "/images/chevron-right-solid.svg",
@@ -18,5 +19,6 @@
     "/images/merry.jpg": "/images/merry.jpg",
     "/images/pippin.png": "/images/pippin.png",
     "/images/rivendell.jpg": "/images/rivendell.jpg",
-    "/images/sam.jpg": "/images/sam.jpg"
+    "/images/sam.jpg": "/images/sam.jpg",
+    "/images/times-solid.svg": "/images/times-solid.svg"
 }

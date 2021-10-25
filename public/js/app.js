@@ -38,9 +38,25 @@ function scrollFunction() {
   }
 }
 
-mybutton.onclick = function (topFunction) {
+mybutton.onclick = function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+};
+
+var burgerbar = document.getElementById("burgerBar");
+var closemenu = document.getElementById("closeMenu");
+var burgermenu = document.getElementById("burgerMenu");
+
+burgerbar.onclick = function () {
+  burgermenu.style.display = "flex";
+  closemenu.style.display = "block";
+  document.body.style.overflow = "hidden";
+};
+
+closemenu.onclick = function () {
+  burgermenu.style.display = "none";
+  closemenu.style.display = "none";
+  document.body.style.overflow = "auto";
 };
 
 /***/ }),

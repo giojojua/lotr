@@ -44,6 +44,10 @@ header {
         }
       }
     }
+
+    #burgerBar, #closeMenu {
+      display: none;
+    }
   }
 }
 
@@ -273,6 +277,66 @@ footer {
         align-items: center;
         background-color: #0e0f12;
         display: none;
+        animation: fadeIn 1s;
+        -webkit-animation: fadeIn 1s;
+        -moz-animation: fadeIn 1s;
+        -o-animation: fadeIn 1s;
+      }
+
+      @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+
+      @-moz-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+
+      @-webkit-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+
+      @-o-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+
+      @-ms-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      .button-group {
+        position: relative;
+      }
+
+      #burgerBar {
+        display: block;
+      }
+
+      #closeMenu {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+      }
+
+      #burgerBar, #closeMenu {
+        height: 40px;
+        width: 40px;
+        margin-left: auto;
+        background-color: transparent;
+        border-radius: 3px;
+
+        img {
+          height: 20px;
+          width: 20px;
+          display: block;
+          margin: auto;
+        }
       }
     }
   }

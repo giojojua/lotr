@@ -379,8 +379,12 @@ p {
 }
 
 @media (max-width: 767px) {
-  h1 {
-    font-size: 22px;
+  h1, h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
   }
 }
 header {
@@ -412,6 +416,9 @@ header nav ul li a {
   text-decoration: none;
   font-family: "Grenze Gotisch", cursive;
   font-size: 25px;
+}
+header nav #burgerBar, header nav #closeMenu {
+  display: none;
 }
 
 .slider {
@@ -593,6 +600,52 @@ footer p {
     align-items: center;
     background-color: #0e0f12;
     display: none;
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  header nav .button-group {
+    position: relative;
+  }
+  header nav #burgerBar {
+    display: block;
+  }
+  header nav #closeMenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+  }
+  header nav #burgerBar, header nav #closeMenu {
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    background-color: transparent;
+    border-radius: 3px;
+  }
+  header nav #burgerBar img, header nav #closeMenu img {
+    height: 20px;
+    width: 20px;
+    display: block;
+    margin: auto;
   }
 
   .slider .carousel-control-prev-icon, .slider .carousel-control-next-icon {
