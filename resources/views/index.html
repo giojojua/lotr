@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="css/main.css">
 <body>
 <div class="container">
-    <header>
+    <header id="#top">
         <div class="navbar-brand">
             <a href="/">
                 <img src="images/lotr-logo.png" alt="">
@@ -17,12 +17,12 @@
         </div>
         <nav>
             <ul>
-                <li><a class="active" href="">Services</a></li>
-                <li><a href="">Team</a></li>
+                <li><a class="active" href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Partners</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#contacts">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -30,9 +30,12 @@
 <section class="slider">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -60,20 +63,76 @@
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden"></span>
         </button>
     </div>
 </section>
 <div class="container">
+    <section id="services">
+
+    </section>
+    <section id="team">
+        <h2 class="text-center">Team</h2>
+        <div class="team">
+            <div class="team-box member1">
+                <div class="member-name">
+                    <h3>Gandalf</h3>
+                </div>
+            </div>
+            <div class="team-box member2">
+                <div class="member-name">
+                    <h3>Aragorn</h3>
+                </div>
+            </div>
+            <div class="team-box member3">
+                <div class="member-name">
+                    <h3>Boromir</h3>
+                </div>
+            </div>
+            <div class="team-box member4">
+                <div class="member-name">
+                    <h3>Legolas</h3>
+                </div>
+            </div>
+            <div class="team-box member5">
+                <div class="member-name">
+                    <h3>Gimli</h3>
+                </div>
+            </div>
+            <div class="team-box member6">
+                <div class="member-name">
+                    <h3>Frodo</h3>
+                </div>
+            </div>
+            <div class="team-box member7">
+                <div class="member-name">
+                    <h3>Sam</h3>
+                </div>
+            </div>
+            <div class="team-box member8">
+                <div class="member-name">
+                    <h3>Pippin</h3>
+                </div>
+            </div>
+            <div class="team-box member9">
+                <div class="member-name">
+                    <h3>Merry</h3>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="about">
         <h2 class="text-center">About</h2>
-        <p class="text-justify">The Lord of the Rings is an epic high-fantasy novel by English author and scholar J. R. R. Tolkien. Set
+        <p class="text-justify">The Lord of the Rings is an epic high-fantasy novel by English author and scholar J. R.
+            R. Tolkien. Set
             in Middle-earth, intended to be Earth at some distant time in the past, the story began as a sequel to
             Tolkien's 1937 children's book The Hobbit, but eventually developed into a much larger work. Written in
             stages between 1937 and 1949, The Lord of the Rings is one of the best-selling books ever written, with over
@@ -107,9 +166,64 @@
             Award-winning adaptations of The Lord of the Rings have been made for radio, theatre, and film. It has been
             named Britain's best novel of all time in the BBC's The Big Read.</p>
     </section>
-    <section id="contacts">
-
-    </section>
+</div>
+<section id="contacts">
+    <div class="contacts-wrapper">
+        <div class="container">
+            <h2 class="text-center">Contacts</h2>
+            <div class="contacts-row">
+                <div class="contacts-box">
+                    <h3>For Human People:</h3>
+                    <div class="contact-box-wrapper">
+                        <p>Address:</p>
+                        <ul>
+                            <li><p>Gondor</p></li>
+                            <li><p>Rohan</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts-box">
+                    <h3>For Elvish People:</h3>
+                    <div class="contact-box-wrapper">
+                        <p>Address:</p>
+                        <ul>
+                            <li><p>Rivendell</p></li>
+                            <li><p>Elvenking's Halls</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts-box">
+                    <h3>For Orcish People:</h3>
+                    <div class="contact-box-wrapper">
+                        <p>Address:</p>
+                        <ul>
+                            <li><p>Dol Guldur</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts-box">
+                    <h3>For Dwarvish People:</h3>
+                    <div class="contact-box-wrapper">
+                        <p>Address:</p>
+                        <ul>
+                            <li><p>Moria</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts-box">
+                    <h3>For Hobbit People:</h3>
+                    <div class="contact-box-wrapper">
+                        <p>Address:</p>
+                        <ul>
+                            <li><p>Shire</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
     <footer>
         <p>© 2020 - 2021 <span class="text-yellow">Lord of the Rings</span>. All rights reserved.</p>
     </footer>

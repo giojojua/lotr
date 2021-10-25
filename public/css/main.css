@@ -383,29 +383,6 @@ p {
     font-size: 22px;
   }
 }
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.5s;
-  animation-name: fade;
-  animation-duration: 2.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 header {
   height: 100px;
   display: flex;
@@ -478,8 +455,101 @@ header nav ul li a {
   background-color: #00000066;
 }
 
+#team {
+  padding: 60px 0;
+}
+#team .team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px 30px;
+}
+#team .team .team-box {
+  height: 350px;
+  width: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#team .team .team-box .member-name {
+  height: 100%;
+  width: 100%;
+  background: #00000099;
+  background: linear-gradient(to right, transparent 50%, #00000099 50%);
+  background-size: 200% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+}
+#team .team .team-box .member-name h3 {
+  opacity: 0;
+  transition: all 4s ease;
+}
+#team .team .team-box:hover .member-name {
+  background-position: right bottom;
+}
+#team .team .team-box:hover .member-name h3 {
+  opacity: 1;
+}
+#team .team .member1 {
+  background-image: url(/images/gandalf.jpg?3ca61a0e4e6f2e0b5341408f19c8336d);
+}
+#team .team .member2 {
+  background-image: url(/images/aragorn.jpg?54c82e991fe5514bb659ae5bb10ae2bb);
+}
+#team .team .member3 {
+  background-image: url(/images/boromir.jpg?7ececa44cb1ae6630259e89b4b93a1f2);
+}
+#team .team .member4 {
+  background-image: url(/images/legolas.jpg?ba509106952236af703ca6c7997498e3);
+}
+#team .team .member5 {
+  background-image: url(/images/gimli.jpg?e506592007ec0e2074053296e231c60a);
+}
+#team .team .member6 {
+  background-image: url(/images/frodo.jpg?bc70fa195aa526d4c2ab2afd4720b031);
+}
+#team .team .member7 {
+  background-image: url(/images/sam.jpg?ee7ef61e40c1f34c3ffbb81b2f2ca7a1);
+}
+#team .team .member8 {
+  background-image: url(/images/pippin.png?4e1434df1fe06546bb5e99ddd3e7a35d);
+}
+#team .team .member9 {
+  background-image: url(/images/merry.jpg?07ea9e2f5f485365162286bd0ac8b455);
+}
+
 #about {
   padding: 60px 0;
+}
+
+#contacts {
+  position: relative;
+  background-image: url(/images/rivendell.jpg?17634f3ecd87c44bdc72155051c465ad);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#contacts .contacts-wrapper {
+  padding: 60px 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+#contacts .contacts-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px 30px;
+}
+#contacts .contacts-row .contact-box-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#contacts .contacts-row .contact-box-wrapper ul p {
+  color: #f9bc01;
 }
 
 footer {
@@ -511,5 +581,11 @@ footer p {
   }
   .slider .carousel-indicators [data-bs-target] {
     width: 20px;
+  }
+
+  #team .team-box .member-name {
+    display: flex;
+    align-items: end;
+    background-color: #00000026;
   }
 }
