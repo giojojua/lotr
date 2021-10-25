@@ -559,6 +559,26 @@ footer p {
   text-align: center;
 }
 
+.btnUp {
+  height: 50px;
+  width: 50px;
+  background-color: #f9bc01;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btnUp img {
+  height: 30px;
+  width: 30px;
+}
+
 @media (max-width: 767px) {
   header nav ul {
     height: 100vh;
