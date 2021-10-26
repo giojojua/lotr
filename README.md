@@ -1,6 +1,8 @@
 # markup_final_project
 
+npm install - for dependecies
+npm run watch - in root folder for converting scss to css
+
 start server in - public - folder
 
-run npm install - for dependecies
-run npm run watch - in root folder for converting scss to css
+domain - https://lordoftherings.surge.sh/
