@@ -632,8 +632,49 @@ header nav #burgerBar, header nav #closeMenu {
   color: #f9bc01;
 }
 
+#partners {
+  background-image: url(/images/nazguls.png?f440bab3b0bd70ff83c026cb30f0b984);
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#partners .partners {
+  padding: 60px 0;
+  background-color: #0009;
+  text-align: justify;
+}
+
+#gallery {
+  padding: 60px 0;
+}
+#gallery .grid-container {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+#gallery .grid-container2 {
+  margin-top: 5px;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+#gallery .grid-container, #gallery .grid-container2 {
+  display: grid;
+  grid-column: 4;
+  grid-row: 2;
+  grid-template-rows: 1fr;
+  gap: 5px;
+}
+#gallery .grid-container .grid-item, #gallery .grid-container2 .grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+#gallery .grid-container .grid-item img, #gallery .grid-container2 .grid-item img {
+  display: block;
+  width: 100%;
+  max-height: 540px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 footer {
-  padding: 25px 15px;
+  padding: 35px 15px;
 }
 footer p {
   text-align: center;
