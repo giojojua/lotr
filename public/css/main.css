@@ -461,6 +461,9 @@ header nav ul li a {
   font-family: "Grenze Gotisch", cursive;
   font-size: 25px;
 }
+header nav ul li a:hover {
+  color: #f9bc01;
+}
 header nav #burgerBar, header nav #closeMenu {
   display: none;
 }

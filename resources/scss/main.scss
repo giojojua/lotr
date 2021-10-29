@@ -42,6 +42,10 @@ header {
           @include reset-link;
           @include font-primary;
           font-size: 25px;
+
+          &:hover {
+            @include text-yellow
+          }
         }
       }
     }
